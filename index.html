@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual Learning Platform for Class 4 Science — Nutrients in Our Food & Balanced Diet.">
+  <title>🌱 Learn with Eyes — Class 4 Science</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header__logo" id="headerLogo" role="button" tabindex="0" title="Back to Home">
+      <span class="header__logo-icon">🌱</span>
+      <span>Learn with Eyes — Class 4</span>
+    </div>
+    <nav class="header__nav">
+      <button class="header__ctrl-btn" id="studentProfileBtn" title="Switch Student Name" aria-label="Student Profile">
+        <span>👤</span> <span id="currentStudentName">Student 1</span>
+      </button>
+      <button class="header__ctrl-btn" id="langToggleBtn" title="Switch Bilingual English/Hindi" aria-label="Toggle Language">
+        <span id="langToggleLabel">🇮🇳 EN/हिं</span>
+      </button>
+      <button class="header__ctrl-btn" id="fontSizeBtn" title="Change text size (Normal / Large / Extra Large)" aria-label="Toggle text size">
+        <span id="fontSizeLabel">A⁺</span>
+      </button>
+      <button class="header__ctrl-btn" id="themeToggleBtn" title="Toggle High Contrast / Dark Mode" aria-label="Toggle theme">
+        <span id="themeToggleIcon">🌙</span>
+      </button>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- ==================== LAYOUT ==================== -->
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__unit-title">🏠 Home &amp; Progress</div>
+      <a href="#home" class="sidebar__link active" data-page="home" id="nav-home">
+        <span class="sidebar__link-icon">🏡</span>
+        <span class="sidebar__link-text">All Chapters (1–2)</span>
+      </a>
+      <a href="#dashboard" class="sidebar__link" data-page="dashboard" id="nav-dashboard">
+        <span class="sidebar__link-icon">📊</span>
+        <span class="sidebar__link-text">Progress Dashboard</span>
+      </a>
+
+      <div class="sidebar__unit-title">Unit I — Food &amp; Health</div>
+      <a href="#ch1" class="sidebar__link" data-page="ch1" id="nav-ch1">
+        <span class="sidebar__link-icon">🍎</span>
+        <span class="sidebar__link-text">1. Nutrients in Our Food</span>
+        <span class="sidebar__progress" id="prog-ch1">●</span>
+      </a>
+      <a href="#ch2" class="sidebar__link" data-page="ch2" id="nav-ch2">
+        <span class="sidebar__link-icon">🥗</span>
+        <span class="sidebar__link-text">2. Balanced Diet</span>
+        <span class="sidebar__progress" id="prog-ch2">●</span>
+      </a>
+    </aside>
+
+    <main class="main" id="app" aria-live="polite">
+      <!-- Rendered dynamically by app.js -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
